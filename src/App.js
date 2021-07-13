@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="container">
-     <Header/>
+     <Header title="Hello world" hippos="blue" birds="chirp"/>
     </div>
   );
 }
