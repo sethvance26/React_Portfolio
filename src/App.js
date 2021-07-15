@@ -1,12 +1,14 @@
-import Header from './components/Header'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar.js';
+import Header from './components/Header';
 
 function App() {
-
-
   return (
-    <div className="container">
-     <Header title="Hello world" hippos="blue" birds="chirp"/>
-    </div>
+    <>
+    <Navbar />
+    <Header/>
+    </>
   );
 }
 

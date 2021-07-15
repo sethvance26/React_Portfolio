@@ -1,16 +1,23 @@
-import React from 'react'
+import React from "react";
+import Typed from "react-typed";
 
-const Header = (props) => {
-    console.log(props)
+
+const Header = () => {
     return (
-        <header>
-            <h1>{props.title}</h1>
-        </header>
+        <div className="header-wraper">
+            <div className="main-info">
+                <h1>Web development and websites promotions</h1>
+                <Typed 
+                className="typed-text" 
+                strings={["Front-End Development", "Back-End Development", "All your needs and more!"]}
+                typeSpeed={40}
+                backSpeed={30}
+                loop
+                />
+                <a href='#' className="btn-main-offer"></a>
+            </div>
+        </div>
     )
-}
-
-Header.defaultProps = {
-    title: 'React Portfolio'
 }
 
 export default Header
