@@ -97,3 +97,10 @@ nav ul li {
   color: var(--primary-white);
   margin: 2rem;
 }
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
