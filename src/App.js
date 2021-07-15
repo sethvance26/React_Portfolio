@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <Particles
+    className="particles-canvas"
       params={{
         particles: {
           number: {
@@ -15,6 +16,13 @@ function App() {
             density: {
               enable: true,
               value_area: 900
+            }
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 6.5,
+              color: '#f9ab00'
             }
           }
         }
