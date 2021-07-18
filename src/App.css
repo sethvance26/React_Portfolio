@@ -15,7 +15,8 @@
 body {
   font-family: "Roboto Condensed", sans-serif !important;
 }
-/*****Navbar****/
+
+/* Navbar Component Styling Below */
 
 nav {
   z-index: 2;
@@ -63,7 +64,7 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-/* Header Styling Below */
+/* Header Component Styling Below */
 
 .header-wraper {
   position: relative;
@@ -94,7 +95,9 @@ nav ul li {
 
 
 
-/* Typed Text Effect styling */
+/* Typed Text Effect Styling Below */
+
+
 .typed-text {
   font-size: 2rem;
   color: var(--primary-other)
@@ -110,7 +113,7 @@ nav ul li {
   }
 
 
-/* Header main ofr btn */
+/* Header main ofr btn styling below */
 
 .btn-main-offer {
   border: 1px solid var(--primary-red);
@@ -141,7 +144,7 @@ nav ul li {
   }
 }
 
-/* About Section */
+/* About Me Component Styling Below */
 
 .photo-wrap {
   display: flex;
@@ -173,7 +176,7 @@ nav ul li {
   }
 }
 
-/* Services */
+/* Services Component Styling Below */
 
 .services {
   text-align: center;
@@ -224,4 +227,17 @@ nav ul li {
 
 .services .box:hover .circle {
   background: var(--primary-white);
+}
+
+/* Portfolio Component Styling Below */
+
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
 }
