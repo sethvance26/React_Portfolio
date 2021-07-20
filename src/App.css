@@ -296,6 +296,8 @@ nav ul li {
 .portfolio-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
+  justify-content: center;
+  align-self: center;
 }
 
 .hyper-link {
@@ -307,3 +309,35 @@ nav ul li {
   cursor: pointer;
   color: var(--primary-red);
 }
+
+/* Media Queries for project imgs */
+
+@media(max-width: 768px) {
+.portfolio-image-popupbox {
+  width: 100%;
+}
+}
+
+
+@media(max-height: 570px) {
+
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+  }
+
+
+  @media(max-height: 280px) {
+
+    .popupbox-wrapper {
+      height: 90%;
+    }
+  
+    .portfolio-image-popupbox {
+      width: 30%;
+    }
+    }

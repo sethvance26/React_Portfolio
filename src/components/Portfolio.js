@@ -23,18 +23,26 @@ const openPopupboxCadmium = () => {
     <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/>
     <p>A crowd sourced application for finding, exploring,
     and posting Art Events for the city of Richmond, Virginia
-    This application was built with node using the MVC Framework. 
+    This application was built with node using the MVC Framework.<br></br> 
     It has a MySQL database and Sequelize ORM, an Express server and restful API, 
     and uses the handlebars templating engine for server side rendering.
-    Developed by a team collaborating with Source Code Management through Github</p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/johnsoncm/cadmium")}
+    Developed by a team <br></br>collaborating with Source Code Management through Github</p>
+    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/johnsoncm/cadmium", "_blank")}
     >https://github.com/johnsoncm/cadmium</a>
     <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://ancient-lowlands-14789.herokuapp.com/")}
+    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://ancient-lowlands-14789.herokuapp.com/", "_blank")}
     >https://ancient-lowlands-14789.herokuapp.com/</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Cadmium Art Events Project ",
+        },
+      },
+    });
 }
 
 const popupboxConfigCadmium = {
@@ -52,19 +60,27 @@ const openPopupboxGighub = () => {
         <>
     <img className="portfolio-image-popupbox" src={gighub} alt="Gighub Live Music Project.."/>
     <p>GigHub Music allows Artists and Consumers alike to research venues 
-        in any US city and view recent Youtube results for those venues.
+        in any US city and view recent Youtube results for those venues.<br></br>
         With the integration of Youtube's API, the user can even see live music events or concerts
-        that previously took place within a given area. With integration of Mapquest API, the User
+        that previously took place within a given area. <br></br> With integration of Mapquest API, the User
         can view geographical location for those venues
-        to plan for a future trip. GigHub Music uses multiple CSS frameworks and Third-Party API's.</p>
+        to plan for a future trip. GigHub Music uses <br></br> multiple CSS frameworks and Third-Party API's.</p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/kcarroll21/projectoneNFTeam", "_blank")}
     >https://github.com/kcarroll21/projectoneNFTeam</a>
     <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://kcarroll21.github.io/projectoneNFTeam/")}
+    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://kcarroll21.github.io/projectoneNFTeam/", "_blank")}
     >https://kcarroll21.github.io/projectoneNFTeam/</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Gighub Live Music",
+        },
+      },
+    });
 }
 
 const popupboxConfigGighub = {
@@ -82,18 +98,26 @@ const openPopupboxbudgetTracker = () => {
         <>
     <img className="portfolio-image-popupbox" src={budgetTracker} alt="Budget Tracker Project.."/>
     <p>Budget Tracker is a progressive web application where users can track their withdrawals and 
-        deposits with and without data or an internet connection. Users can have faith that their 
+        deposits with and without data or an internet connection. <br></br> Users can have faith that their 
         budgets will maintain accuracy during travel, no matter where they go. Budget Tracker additionally
-         has the functionality to graph a user's total amount of money over time, giving the user a
+         has the functionality <br></br> to graph a user's total amount of money over time, giving the user a
           physical representation of their budget.</p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Budget-Tracker-Offline-Online", "_blank")}
     >https://github.com/sethvance26/Budget-Tracker-Offline-Online</a>
     <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://mighty-gorge-65427.herokuapp.com/")}
+    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://mighty-gorge-65427.herokuapp.com/", "_blank")}
     >https://mighty-gorge-65427.herokuapp.com/</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Budget Tracker",
+        },
+      },
+    });
 }
 
 const popupboxConfigbudgetTracker = {
@@ -111,18 +135,26 @@ const openPopupboxfitnessTracker = () => {
         <>
     <img className="portfolio-image-popupbox" src={fitnessTracker} alt="Workout Tracker Project.."/>
     <p>Workout Tracker is a application where users can track their workouts, and create new workouts as well.
-         Users can log multiple exercises in a workout they've done for that day with functionality for 
-         different types of exercises, different amounts of reps/sets, weight amounts, duration of the 
+         Users can log multiple exercises <br></br> in a workout they've done for that day with functionality for 
+         different types of exercises, different amounts of reps/sets, weight amounts,<br></br> duration of the 
          exercise, or distance traveled for cardio. Users can also view their dashboard, which shows their 
          workout information graphed over time.</p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Workout-Tracker", "_blank")}
     >https://github.com/sethvance26/Workout-Tracker</a>
     <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca")}
+    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca", "_blank")}
     >https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Workout Tracker",
+        },
+      },
+    });
 }
 
 const popupboxConfigfitnessTracker = {
@@ -140,16 +172,24 @@ const openPopupboxworkday = () => {
         <>
     <img className="portfolio-image-popupbox" src={workday} alt="Workday scheduler Project.."/>
     <p>WorkDay scheduler uses Moment.js to give user the current time and date, and alters the color of each line depending 
-        on the current hour within a typical 9 to 5 workday. The User can also write in notes for each hour which will be stored in the
+        on the current hour within a typical 9 to 5 workday.<br></br> The User can also write in notes for each hour which will be stored in the
         user's Local Storage and remain on the page. Jquery and conditional statements were also applied in this project. </p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Day-Planner", "_blank")}
     >https://github.com/sethvance26/Day-Planner</a>
     <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://sethvance26.github.io/Day-Planner/")}
+    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://sethvance26.github.io/Day-Planner/", "_blank")}
     >https://sethvance26.github.io/Day-Planner/</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Workday Scheduler",
+        },
+      },
+    });
 }
 
 const popupboxConfigworkday = {
@@ -167,19 +207,27 @@ const openPopupboxEmployee = () => {
         <>
     <img className="portfolio-image-popupbox" src={employee} alt="Employee Tracker Project.."/>
     <p>Employee Tracker uses MySql to architect and build a solution for managing a potential
-         company's employees using node, inquirer, and mySQL. In simple terms, this application 
+         company's employees using node, inquirer, and mySQL. <br></br> In simple terms, this application 
          builds a Content Management System, so that non-developers can view and interact with 
-         employee information within the database. This way you can add Employees, Departments, 
+         employee information <br></br> within the database. This way you can add Employees, Departments, 
          and Roles, view the existing ones in the database, and update roles for existing employees'
         as well.  </p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Employee-Tracker", "_blank")}
     >https://github.com/sethvance26/Employee-Tracker</a>
     <br></br>
-    <b>Video Demonstration:</b> <a className="hyper-link" onClick={() => window.open("https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view")}
+    <b>Video Demonstration:</b> <a className="hyper-link" onClick={() => window.open("https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view", "_blank")}
     >https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Employee Tracker",
+        },
+      },
+    });
 }
 
 const popupboxConfigEmployee = {
@@ -194,7 +242,7 @@ const popupboxConfigEmployee = {
     return (
        <div className= "portfolio-wrapper">
            <div className = "container">
-               <h1 className= "text-uppercase text-center py-5">Portfolio</h1>
+               <h1 className= "text-uppercase text-center py-5">Previous Projects</h1>
               
                <div className="image-box-wrapper row row-cols-auto justify-content-center">
                    <div className="portfolio-image-box" onClick={openPopupboxCadmium}>
