@@ -10,6 +10,8 @@
   --primary-hover-red: #f33501;
   --primary-light-grey: #f4f4f4;
   --primary-black: #000000;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
 }
 
 
@@ -326,6 +328,55 @@ nav ul li {
 .contacts p {
   color: var(--primary-light-grey);
   font-size: 1.2rem;
+}
+
+/* INPUTS FOR CONTACT ME */
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.4rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+/* Media Queries for Contact Inputs */
+
+@media(max-width: 768px) {
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }
 
 /* Media Queries for project imgs */
