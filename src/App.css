@@ -310,6 +310,24 @@ nav ul li {
   color: var(--primary-red);
 }
 
+/* Contact Component Styling */
+
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
 /* Media Queries for project imgs */
 
 @media(max-width: 768px) {
