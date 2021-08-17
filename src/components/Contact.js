@@ -2,6 +2,23 @@ import React from 'react'
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+
+    const serviceID = "service_ID";
+    const templateID = "template_ID";
+    const userID = "user_U0AjzmIZiXhhNUZlqcoid";
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(serviceID, templateID, e.target, userID)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
+    
+
     return (
 
         <div className = "contacts">
@@ -10,6 +27,7 @@ const Contact = () => {
             <p>Please fill out the form...</p>
         </div>
             <div className= "container">
+            <form onSubmit={sendEmail}>
             <div className="row">
             <div className="col-md-6 col-xs-12">
             {/* {NAME INPUT} */}
@@ -67,6 +85,7 @@ const Contact = () => {
             <button className="btn-main-offer contact-btn" type="submit">Contact Me</button>
             </div>
             </div>
+            </form>
             </div>
         </div>
     )
