@@ -358,7 +358,7 @@ nav ul li {
 }
 
 .contacts textarea {
-  height: 12.4rem !important;
+  height: 12.2rem !important;
 }
 
 .contact-btn {
@@ -367,9 +367,35 @@ nav ul li {
   background: none;
 }
 
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
 /* Media Queries for Contact Inputs */
 
 @media(max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  
   .contacts .container {
     padding: 0 1rem;
   }
