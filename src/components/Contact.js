@@ -41,6 +41,7 @@ const Contact = () => {
             <div className="text-center">
             <h1>Contact Me</h1>
             <p>Please fill out the form...</p>
+            <span className="success-message">{successMessage}</span>
         </div>
             <div className= "container">
             <form onSubmit={handleSubmit(onSubmit)}>

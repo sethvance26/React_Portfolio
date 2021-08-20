@@ -10,8 +10,10 @@
   --primary-hover-red: #f33501;
   --primary-light-grey: #f4f4f4;
   --primary-black: #000000;
+  --primary-green: green;
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
+  --primary-blue: #899ec5;
 }
 
 
@@ -389,6 +391,16 @@ textarea.form-control {
   margin: -0.3rem 0;
 }
 
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-blue);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
 /* Media Queries for Contact Inputs */
 
 @media(max-width: 768px) {
