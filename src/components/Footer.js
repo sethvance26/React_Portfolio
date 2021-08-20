@@ -1,4 +1,15 @@
 import React from 'react'
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    LinkedinShareButton,
+    LinkedinIcon,
+    TwitterShareButton,
+    TwitterIcon,
+    EmailShareButton,
+    EmailIcon
+} from "react-share";
+
 
 const Footer = () => {
     return (
@@ -7,7 +18,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="d-flex">
-                            <p>Random Text</p>
+                            <p>Seth Jordan Vance</p>
                         </div>
                         <div className="d-flex">
                             <a href="tel: 804-502-9700">(804)502-9700</a>
@@ -31,6 +42,45 @@ const Footer = () => {
                                 <a className="footer-nav">Contact</a>
                             </div>
                         </div>
+                    </div>
+                    <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+                        <div className="d-flex justify-content-center">
+                            <FacebookShareButton
+                                url={"https://github.com/sethvance26/React_Portfolio"}
+                                quote={"Seth Vance - FullStack Developer"}
+                                hashtag="#React"
+                            >   
+                                <FacebookIcon className="mx-3" size={36} />
+                            </FacebookShareButton>
+
+                            <LinkedinShareButton
+                                url={"https://github.com/sethvance26/React_Portfolio"}
+                                quote={"Seth Vance - FullStack Developer"}
+                                hashtag="#React"
+                            >   
+                                <LinkedinIcon className="mx-3" size={36} />
+                            </LinkedinShareButton>
+
+                            <TwitterShareButton
+                                url={"https://github.com/sethvance26/React_Portfolio"}
+                                quote={"Seth Vance - FullStack Developer"}
+                                hashtag="#React"
+                            >   
+                                <TwitterIcon className="mx-3" size={36} />
+                            </TwitterShareButton>
+
+                            <EmailShareButton
+                                url={"https://github.com/sethvance26/React_Portfolio"}
+                                quote={"Seth Vance - FullStack Developer"}
+                                hashtag="#React"
+                            >   
+                                <EmailIcon className="mx-3" size={36} />
+                            </EmailShareButton>
+                        </div>
+                        <p className="pt-3 text-center">
+                        Copyright&copy;
+                        {new Date().getFullYear()}&nbsp;Seth J. Vance | All Rights Reserved
+                        </p>
                     </div>
                 </div>
             </div>
