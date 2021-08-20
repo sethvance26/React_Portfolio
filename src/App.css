@@ -417,6 +417,25 @@ textarea.form-control {
   }
 }
 
+/* Styling for Footer Component */
+
+.footer {
+  background: var(--primary-black);
+  color:var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
 /* Media Queries for project imgs */
 
 @media(max-width: 768px) {
