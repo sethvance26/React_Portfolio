@@ -436,6 +436,10 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.footer p {
+  margin-bottom: 0;
+}
+
 /* Media Queries for project imgs */
 
 @media(max-width: 768px) {
