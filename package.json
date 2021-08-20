@@ -19,6 +19,7 @@
     "react-particles-js": "^3.5.3",
     "react-popupbox": "^2.0.8",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.3",
     "react-share": "^4.4.0",
     "react-typed": "^1.2.0",
     "tsparticles": "^1.31.1",
