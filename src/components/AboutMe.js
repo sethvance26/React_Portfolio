@@ -15,7 +15,8 @@ const AboutMe = () => {
 
                 <p className="text-end">A Tireless, results-driven Web Developer dedicated to building and optimizing user-focused websites for customers with various business and personal objectives. 
                 Judicious and creative when crafting effective websites, apps and platforms to propel growth and competitive advantage. 
-                Technically proficient and analytical problem solver with calm and focused demeanor. 
+                Technically proficient and analytical problem solver with calm and focused demeanor. Leveraging years of customer service experience with my recent graduation of the University Of Richmond's Full Stack Flex Bootcamp, 
+                working collaboratively or solo on projects comes naturally. 
                 </p>
             </div>
         </div>
