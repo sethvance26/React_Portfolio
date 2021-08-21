@@ -179,6 +179,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
+
 @media(max-width: 468px) {
   .profile-img {
     width: 11rem;
@@ -339,7 +340,7 @@ nav ul li {
 
 .contacts p {
   color: var(--primary-light-grey);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* INPUTS FOR CONTACT ME */
