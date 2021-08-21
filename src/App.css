@@ -59,9 +59,13 @@ nav ul li {
     .navbar-brand {
       width:7rem;
     }
+
+    .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+      border-top: 0.2875rem solid var(--primary-orange);
+    }
   }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -73,10 +77,10 @@ nav ul li {
 
 .header-wraper {
   position: relative;
-  background: url(remy-background.jpg) no-repeat;
+  background: url(b.JPG) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -105,7 +109,7 @@ nav ul li {
 
 .typed-text {
   font-size: 2rem;
-  color: var(--primary-other)
+  color: var(--primary-white)
 }
 
 @media(max-width: 768px) {
@@ -245,8 +249,8 @@ nav ul li {
 }
 
 .portfolio-image {
-  width: 15rem;
-  height: 8rem;
+  width: 18rem;
+  height: 12rem;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5;
 }
@@ -269,8 +273,8 @@ nav ul li {
   position: absolute;
   opacity: 0;
   background: var(--primary-black);
-  width: 15rem;
-  height: 8rem;
+  width: 18rem;
+  height: 12rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -284,8 +288,8 @@ nav ul li {
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -8rem;
-  margin-top: 3.6rem;
+  margin-left: -10rem;
+  margin-top: 4.7rem;
   color: var(--primary-white);
   font-size: 1.5rem;
 }
@@ -295,10 +299,16 @@ nav ul li {
   transition: 0.3s ease-in-out;
 }
 
-/*  */
+.popupbox-wrapper {
+  margin-top: 7rem;
+  max-width: 70% !important;
+}
+
+/* overflow box styling */
 
 .portfolio-image-popupbox {
-  width: 45rem;
+  margin: none;
+  width: 35rem;
   padding: 0 0.5rem;
   justify-content: center;
   align-self: center;
@@ -360,7 +370,7 @@ nav ul li {
 }
 
 .contacts textarea {
-  height: 12.2rem !important;
+  height: 16.2rem !important;
 }
 
 .contact-btn {
@@ -444,10 +454,67 @@ textarea.form-control {
 
 @media(max-width: 768px) {
 .portfolio-image-popupbox {
-  width: 100%;
+  width: 75%;
+}
+
+.popupbox-wrapper {
+  height: 80%;
 }
 }
 
+@media(max-width: 320px) {
+  .portfolio-image-popupbox {
+    width: 75%;
+  }
+  
+  .popupbox-wrapper {
+    height: 70vh !important;
+    
+  }
+  
+  .popupbox-content {
+    font-size: small;
+  }
+  
+  .popupbox-wrapper a {
+    font-size: x-small;
+  }
+
+  .popupbox-wrapper p {
+    font-size:x-small !important;
+    margin: 0;
+  }
+
+  .popupbox-content img {
+    width: 70%;
+    height: 50%;
+  }
+  }
+
+
+
+@media(max-width: 415px) {
+  .portfolio-image-popupbox {
+    width: 75%;
+  }
+  
+  .popupbox-wrapper {
+    height: 70vh !important;
+    
+  }
+  
+  .popupbox-content {
+    font-size: small;
+  }
+  
+  .popupbox-wrapper a {
+    font-size: x-small;
+  }
+
+  .popupbox-wrapper p {
+    font-size:11px;
+  }
+  }
 
 @media(max-height: 570px) {
 

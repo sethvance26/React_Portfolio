@@ -23,10 +23,10 @@ const openPopupboxCadmium = () => {
     <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/>
     <p>A crowd sourced application for finding, exploring,
     and posting Art Events for the city of Richmond, Virginia
-    This application was built with node using the MVC Framework.<br></br> 
+    This application was built with node using the MVC Framework.
     It has a MySQL database and Sequelize ORM, an Express server and restful API, 
     and uses the handlebars templating engine for server side rendering.
-    Developed by a team <br></br>collaborating with Source Code Management through Github</p>
+    Developed by a team collaborating with Source Code Management through Github</p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/johnsoncm/cadmium", "_blank")}
     >https://github.com/johnsoncm/cadmium</a>
     <br></br>
@@ -60,11 +60,11 @@ const openPopupboxGighub = () => {
         <>
     <img className="portfolio-image-popupbox" src={gighub} alt="Gighub Live Music Project.."/>
     <p>GigHub Music allows Artists and Consumers alike to research venues 
-        in any US city and view recent Youtube results for those venues.<br></br>
+        in any US city and view recent Youtube results for those venues.
         With the integration of Youtube's API, the user can even see live music events or concerts
-        that previously took place within a given area. <br></br> With integration of Mapquest API, the User
+        that previously took place within a given area. With integration of Mapquest API, the User
         can view geographical location for those venues
-        to plan for a future trip. GigHub Music uses <br></br> multiple CSS frameworks and Third-Party API's.</p>
+        to plan for a future trip. GigHub Music uses multiple CSS frameworks and Third-Party API's.</p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/kcarroll21/projectoneNFTeam", "_blank")}
     >https://github.com/kcarroll21/projectoneNFTeam</a>
     <br></br>
@@ -172,7 +172,7 @@ const openPopupboxworkday = () => {
         <>
     <img className="portfolio-image-popupbox" src={workday} alt="Workday scheduler Project.."/>
     <p>WorkDay scheduler uses Moment.js to give user the current time and date, and alters the color of each line depending 
-        on the current hour within a typical 9 to 5 workday.<br></br> The User can also write in notes for each hour which will be stored in the
+        on the current hour within a typical 9 to 5 workday. The User can also write in notes for each hour which will be stored in the
         user's Local Storage and remain on the page. Jquery and conditional statements were also applied in this project. </p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Day-Planner", "_blank")}
     >https://github.com/sethvance26/Day-Planner</a>
@@ -207,9 +207,9 @@ const openPopupboxEmployee = () => {
         <>
     <img className="portfolio-image-popupbox" src={employee} alt="Employee Tracker Project.."/>
     <p>Employee Tracker uses MySql to architect and build a solution for managing a potential
-         company's employees using node, inquirer, and mySQL. <br></br> In simple terms, this application 
+         company's employees using node, inquirer, and mySQL. In simple terms, this application 
          builds a Content Management System, so that non-developers can view and interact with 
-         employee information <br></br> within the database. This way you can add Employees, Departments, 
+         employee information within the database. This way you can add Employees, Departments, 
          and Roles, view the existing ones in the database, and update roles for existing employees'
         as well.  </p>
     <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Employee-Tracker", "_blank")}

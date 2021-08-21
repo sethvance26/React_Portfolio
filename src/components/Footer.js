@@ -80,6 +80,8 @@ const Footer = () => {
                         <p className="pt-3 text-center">
                         Copyright&copy;
                         {new Date().getFullYear()}&nbsp;Seth J. Vance | All Rights Reserved
+                        <br/>
+                        Drone Image Taken In Downtown RVA
                         </p>
                     </div>
                 </div>
