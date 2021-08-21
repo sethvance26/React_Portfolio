@@ -243,6 +243,7 @@ const popupboxConfigEmployee = {
        <div id="portfolio" className= "portfolio-wrapper">
            <div className = "container">
                <h1 className= "text-uppercase text-center py-5">Previous Projects</h1>
+               <h3 className= "text-uppercase text-center py-1">Click on Images to See More!</h3>
               
                <div className="image-box-wrapper row row-cols-auto justify-content-center">
                    <div className="portfolio-image-box" onClick={openPopupboxCadmium}>

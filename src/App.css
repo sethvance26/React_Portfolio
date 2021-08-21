@@ -14,6 +14,7 @@
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-blue: #899ec5;
+  --primary-alt-grey:#e4e4e4;
 }
 
 
@@ -100,6 +101,7 @@ nav ul li {
 .main-info h1 {
   color: var(--primary-white);
   text-transform: uppercase;
+  padding-top: 8rem;
 }
 
 
@@ -115,6 +117,7 @@ nav ul li {
 @media(max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
+    
   }
   .typed-text {
     font-size: 1.3rem !important;
@@ -241,7 +244,7 @@ nav ul li {
 
 /* Portfolio Component Styling Below */
 .portfolio-wrapper {
-  background: var(--primary-light-gray);
+  background: var(--primary-alt-grey);
   padding: 3rem 0;
 }
 
