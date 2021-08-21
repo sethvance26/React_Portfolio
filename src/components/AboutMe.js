@@ -18,6 +18,10 @@ const AboutMe = () => {
                 Technically proficient and analytical problem solver with calm and focused demeanor. Leveraging years of customer service experience with my recent graduation of the University Of Richmond's Full Stack Flex Bootcamp, 
                 working collaboratively or solo on projects comes naturally. 
                 </p>
+                <h2 className="about-heading">Experience with:</h2>
+
+                <p> HTML5, CSS3, JavaScript, jQuery, MongoDB, Express.js, React.js, Node.js, MySQL, Handlebars, Bootstrap, KendoReact, Git, and working with source code management.
+                </p>
             </div>
         </div>
     )
