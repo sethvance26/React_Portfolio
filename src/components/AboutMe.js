@@ -20,7 +20,7 @@ const AboutMe = () => {
                 </p>
                 <h2 className="about-heading">Experience with:</h2>
 
-                <p> HTML5, CSS3, JavaScript, jQuery, MongoDB, Express.js, React.js, Node.js, MySQL, Handlebars, Bootstrap, KendoReact, Git, and working with source code management.
+                <p> HTML5, CSS3, JavaScript, jQuery, MongoDB, Express.js, React.js, Node.js, MySQL, Handlebars, Bootstrap, Kendo-React, Git, and working with source code management.
                 </p>
             </div>
         </div>
