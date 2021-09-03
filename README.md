@@ -82,7 +82,7 @@ For each project that is featured in your portfolio, include the following:
 
 ### Design
 
-As with the previous portfolio homework, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
+As with the previous portfolio homework, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means
 
 * Use mobile-first design.
 

@@ -4,7 +4,7 @@ import logo from "../logo2.png"
 import {Link} from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Resume from "./Vance_Seth_Resume.PDF";
 
 
 
@@ -56,6 +56,14 @@ const Navbar = () => {
             <li className="nav-item" aria-current="page">
               <Link smooth={true} to="contact" offset={-110} onClick={handleClick} className="nav-link" href="#">Contact</Link>
             </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href={Resume} target="_blank">
+                  My Resume
+              </a>
+            </li>
+
+            
             
           </ul>
          
