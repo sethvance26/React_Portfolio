@@ -433,6 +433,10 @@ textarea.form-control {
 
 /* Styling for Footer Component */
 
+.socialMedia{
+  justify-content: space-evenly;
+}
+
 .footer {
   background: var(--primary-black);
   color:var(--primary-dark-grey);

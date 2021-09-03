@@ -23,7 +23,9 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.3",
     "react-share": "^4.4.0",
+    "react-social-icons": "^5.6.1",
     "react-typed": "^1.2.0",
+    "social-media-icons-react": "^1.1.7",
     "tsparticles": "^1.31.1",
     "web-vitals": "^1.1.2"
   },
