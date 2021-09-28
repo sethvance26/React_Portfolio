@@ -1,6 +1,7 @@
 import React from 'react'
 // Importing previous project images
 import cadmium from "../images/cadmium.PNG";
+import kendo from "../images/kendo.PNG";
 import gighub from "../images/gighub.PNG";
 import budgetTracker from "../images/budget.PNG";
 import fitnessTracker from "../images/fitness-tracker.PNG";
@@ -18,40 +19,43 @@ const Portfolio = () => {
 
 // Cadmium Popup Box // 
 const openPopupboxCadmium = () => {
-    const content = (
-        <>
-    <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/>
-    <p>A crowd sourced application for finding, exploring,
-    and posting Art Events for the city of Richmond, Virginia
-    This application was built with node using the MVC Framework.
-    It has a MySQL database and Sequelize ORM, an Express server and restful API, 
-    and uses the handlebars templating engine for server side rendering.
-    Developed by a team collaborating with Source Code Management through Github</p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/johnsoncm/cadmium", "_blank")}
-    >https://github.com/johnsoncm/cadmium</a>
-    <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://ancient-lowlands-14789.herokuapp.com/", "_blank")}
-    >https://ancient-lowlands-14789.herokuapp.com/</a>
-    </>
-    )
-    PopupboxManager.open({ content });
-    PopupboxManager.update({
-      content,
-      config: {
-        titleBar: {
-          text: "Cadmium Art Events Project ",
-        },
+  const content = (
+      <>
+  <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/>
+  <p>A crowd sourced application for finding, exploring,
+  and posting Art Events for the city of Richmond, Virginia. 
+  Users can signup, login, and post new art events, view
+  upcoming art events and information pertaining to them, and share them 
+  with friends. Project still in development for additional functionality.
+  This application was built in MERN stack. It has a MongoDB 
+  database, Mongoose ODM, an Express server,
+  and RESTful API. Developed by a team collaborating 
+  with Source Code Management through Github.</p>
+  <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Cadmium-Seth", "_blank")}
+  >https://github.com/sethvance26/Cadmium-Seth</a>
+  <br></br>
+  <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://cadmiumrva.herokuapp.com/", "_blank")}
+  >https://cadmiumrva.herokuapp.com/</a>
+  </>
+  )
+  PopupboxManager.open({ content });
+  PopupboxManager.update({
+    content,
+    config: {
+      titleBar: {
+        text: "Cadmium Art Events Project ",
       },
-    });
+    },
+  });
 }
 
 const popupboxConfigCadmium = {
-    titleBar: {
-        enable: true,
-        text: "Cadmium Art Event Project"
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
+  titleBar: {
+      enable: true,
+      text: "Cadmium Art Event Project"
+  },
+  fadeIn: true,
+  fadeInSpeed: 500
 }
 
 // Gighub Popup box // 
@@ -90,6 +94,45 @@ const popupboxConfigGighub = {
     },
     fadeIn: true,
     fadeInSpeed: 500
+}
+
+// Kendo Popup box // 
+const openPopupboxKendo = () => {
+  const content = (
+      <>
+  <img className="portfolio-image-popupbox" src={kendo} alt="Kendo-React Exercise.."/>
+  <p>A front-end application built using Kendo-React UI, and Bootstrap in order to display
+    data from a JSON file to users/employees within a company in a clear and concise manner.
+    Users can view information on multiple Payees, Payments, and Remittances on a grid, 
+    and easily sort the information by category for a nice and polished user experience.
+    This exercise/assessment was built with mobile-first design, and utilizes responsiveness 
+    on multiple viewports.
+  </p>
+  <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Kendo-React-Exercise", "_blank")}
+  >https://github.com/sethvance26/Kendo-React-Exercise</a>
+  <br></br>
+  <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://paymerang.herokuapp.com/", "_blank")}
+  >https://paymerang.herokuapp.com/</a>
+  </>
+  )
+  PopupboxManager.open({ content });
+  PopupboxManager.update({
+    content,
+    config: {
+      titleBar: {
+        text: "Kendo-React Exercise",
+      },
+    },
+  });
+}
+
+const popupboxConfigKendo = {
+  titleBar: {
+      enable: true,
+      text: "Kendo-React Exercise"
+  },
+  fadeIn: true,
+  fadeInSpeed: 500
 }
 
 // Budget Tracker Popup box // 
@@ -258,6 +301,13 @@ const popupboxConfigEmployee = {
                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                </div>
                 {/* {} */}
+                  
+                  <div className="portfolio-image-box" onClick={openPopupboxKendo}>
+                   <img className="portfolio-image" src={kendo} alt="Kendo-React Exercise..." />
+                   <div className="overflow"></div>
+                   <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+               </div>
+               {/* {} */}
             <div className="portfolio-image-box" onClick={openPopupboxbudgetTracker}>
                    <img className="portfolio-image" src={budgetTracker} alt="Budget Tracker Project..." />
                    <div className="overflow"></div>
@@ -284,7 +334,8 @@ const popupboxConfigEmployee = {
                </div>
            </div>
            <PopupboxContainer {...popupboxConfigCadmium} />
-           <PopupboxContainer {...popupboxConfigGighub} />
+           <PopupboxContainer {...popupboxConfigGighub} />     
+           <PopupboxContainer {...popupboxConfigKendo} />
            <PopupboxContainer {...popupboxConfigbudgetTracker} />
            <PopupboxContainer {...popupboxConfigfitnessTracker} />
            <PopupboxContainer {...popupboxConfigworkday} />
