@@ -25,8 +25,8 @@ const openPopupboxCadmium = () => {
   <p>A crowd sourced application for finding, exploring,
   and posting Art Events for the city of Richmond, Virginia. 
   Users can signup, login, and post new art events, view
-  upcoming art events and information pertaining to them, and share them 
-  with friends. Project still in development for additional functionality.
+  upcoming art events and information pertaining to them, and share the events
+  through multiple platforms. Project still in development for additional functionality.
   This application was built in MERN stack. It has a MongoDB 
   database, Mongoose ODM, an Express server,
   and RESTful API. Developed by a team collaborating 
