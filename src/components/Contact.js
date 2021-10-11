@@ -132,7 +132,7 @@ const Contact = () => {
             <textarea
             type="text"
             className="form-control"
-            placeholder="Please enter a brief message so we can follow up!"
+            placeholder="Please enter a brief message so I can follow up with you!"
             name="description"
             aria-invalid={errors.description ? "true" : "false"}
             {...register("description", {

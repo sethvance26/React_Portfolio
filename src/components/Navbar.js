@@ -4,7 +4,7 @@ import logo from "../logo2.png"
 import {Link} from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Resume from "./Vance_Seth_Resume.PDF";
+import Resume from "./Vance_Seth_Resume.pdf";
 
 
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 <div className="container">
 
 
-        <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo..." /></a>
+        <a className="navbar-brand" href="#home"><img className="logo" src={logo} alt="logo..." /></a>
         <button className="navbar-toggler"  id="toggler" onClick={handleState} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
         </button>
@@ -58,7 +58,7 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href={Resume} target="_blank">
+              <a className="nav-link" href={Resume} target="_blank" rel="noreferrer">
                   My Resume
               </a>
             </li>

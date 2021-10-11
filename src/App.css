@@ -141,6 +141,7 @@ nav ul li {
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
   transition:  .2s ease-in-out;
+  cursor: pointer;
 }
 
 .tsparticles-canvas-el {
@@ -460,6 +461,17 @@ textarea.form-control {
 
 /* Media Queries for project imgs */
 
+@media(max-width: 1500px) {
+  .portfolio-image-popupbox {
+    width: 60%;
+    height: 75%;
+  }
+  
+  .popupbox-wrapper {
+    height: 80%;
+  }
+  }
+
 @media(max-width: 768px) {
 .portfolio-image-popupbox {
   width: 75%;
@@ -503,11 +515,13 @@ textarea.form-control {
 
 @media(max-width: 415px) {
   .portfolio-image-popupbox {
-    width: 75%;
+    width: 80%;
+    height: 50%;
   }
   
   .popupbox-wrapper {
-    height: 70vh !important;
+    height: 50vh !important;
+    flex: none;
     
   }
   
@@ -520,7 +534,7 @@ textarea.form-control {
   }
 
   .popupbox-wrapper p {
-    font-size:11px;
+    font-size:9.5px;
   }
   }
 
