@@ -1,6 +1,7 @@
 import React from 'react'
 // Importing previous project images
 import cadmium from "../images/cadmium.PNG";
+import cadmiumHome from "../images/cadmium2.png";
 import kendo from "../images/kendo.PNG";
 import gighub from "../images/gighub.PNG";
 import budgetTracker from "../images/budget.PNG";
@@ -21,21 +22,45 @@ const Portfolio = () => {
 const openPopupboxCadmium = () => {
   const content = (
       <>
-  <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/>
-  <p>A crowd sourced application for finding, exploring,
-  and posting Art Events for the city of Richmond, Virginia. 
-  Users can signup, login, and post new art events, view
-  upcoming art events and information pertaining to them, and share the events
-  through multiple platforms. Project still in development for additional functionality.
-  This application was built in MERN stack. It has a MongoDB 
-  database, Mongoose ODM, an Express server,
-  and RESTful API. Developed by a team collaborating 
-  with Source Code Management through Github.</p>
-  <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Cadmium-Seth", "_blank")}
-  >https://github.com/sethvance26/Cadmium-Seth</a>
-  <br></br>
-  <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://cadmiumrva.herokuapp.com/", "_blank")}
-  >https://cadmiumrva.herokuapp.com/</a>
+  {/* <img className="portfolio-image-popupbox" src={cadmium} alt="Cadmium Art Event Project.."/> */}
+
+
+  <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src={cadmium} className="d-block w-100 art-img" alt="Cadmium Art Event Project.."></img>
+    </div>
+    <div className="carousel-item">
+      <img src={cadmiumHome} className="d-block w-100" alt="..."></img>
+    </div>
+    <div className="carousel-item">
+      <img src="..." className="d-block w-100" alt="..."></img>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+      <div className="content">
+        <p>A crowd sourced application for finding, exploring,
+        and posting Art Events for the city of Richmond, Virginia. 
+        Users can signup, login, and post new art events, view
+        upcoming art events and information pertaining to them, and share the events
+        through multiple platforms. Project still in development for additional functionality.
+        This application was built in MERN stack. It has a MongoDB 
+        database, Mongoose ODM, an Express server,
+        and RESTful API. Developed by a team collaborating 
+        with Source Code Management through Github.</p>
+        <div className="linked-section">
+          <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Cadmium-Seth", "_blank")}>Github</a>
+          <a className="hyper-link" onClick={() => window.open("https://cadmiumrva.herokuapp.com/", "_blank")}>Demo Link</a>
+        </div>
+      </div>
   </>
   )
   PopupboxManager.open({ content });
@@ -63,17 +88,28 @@ const openPopupboxGighub = () => {
     const content = (
         <>
     <img className="portfolio-image-popupbox" src={gighub} alt="Gighub Live Music Project.."/>
-    <p>GigHub Music allows Artists and Consumers alike to research venues 
-        in any US city and view recent Youtube results for those venues.
-        With the integration of Youtube's API, the user can even see live music events or concerts
-        that previously took place within a given area. With integration of Mapquest API, the User
-        can view geographical location for those venues
-        to plan for a future trip. GigHub Music uses multiple CSS frameworks and Third-Party API's.</p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/kcarroll21/projectoneNFTeam", "_blank")}
-    >https://github.com/kcarroll21/projectoneNFTeam</a>
-    <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://kcarroll21.github.io/projectoneNFTeam/", "_blank")}
-    >https://kcarroll21.github.io/projectoneNFTeam/</a>
+    <div className="">
+      <div className="content">
+        <p>GigHub Music allows Artists and Consumers alike to research venues 
+            in any US city and view recent Youtube results for those venues.
+            With the integration of Youtube's API, the user can even see live music events or concerts
+            that previously took place within a given area. With integration of Mapquest API, the User
+            can view geographical location for those venues
+            to plan for a future trip. GigHub Music uses multiple CSS frameworks and Third-Party API's.</p>
+        <div className="linked-section">
+          <div class="hyper-link-wrap">
+            <a className="hyper-link" onClick={() => window.open("https://github.com/kcarroll21/projectoneNFTeam", "_blank")}
+            >Github Link</a>
+          </div>
+
+          <div class="hyper-link-wrap">
+            <a className="hyper-link" onClick={() => window.open("https://kcarroll21.github.io/projectoneNFTeam/", "_blank")}
+            >Demo Link</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
     </>
     )
     PopupboxManager.open({ content });
@@ -101,18 +137,26 @@ const openPopupboxKendo = () => {
   const content = (
       <>
   <img className="portfolio-image-popupbox" src={kendo} alt="Kendo-React Exercise.."/>
-  <p>A front-end application built using Kendo-React UI, and Bootstrap in order to display
-    data from a JSON file to users/employees within a company in a clear and concise manner.
-    Users can view information on multiple Payees, Payments, and Remittances on a grid, 
-    and easily sort the information by category for a nice and polished user experience.
-    This exercise/assessment was built with mobile-first design, and utilizes responsiveness 
-    on multiple viewports.
-  </p>
-  <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Kendo-React-Exercise", "_blank")}
-  >https://github.com/sethvance26/Kendo-React-Exercise</a>
-  <br></br>
-  <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://paymerang.herokuapp.com/", "_blank")}
-  >https://paymerang.herokuapp.com/</a>
+  <div className="content">
+    <p>A front-end application built using Kendo-React UI, and Bootstrap in order to display
+      data from a JSON file to users/employees within a company in a clear and concise manner.
+      Users can view information on multiple Payees, Payments, and Remittances on a grid, 
+      and easily sort the information by category for a nice and polished user experience.
+      This exercise/assessment was built with mobile-first design, and utilizes responsiveness 
+      on multiple viewports.
+    </p>
+    <div className="linked-section">
+
+      <div class="hyper-link-wrap">
+        <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Kendo-React-Exercise", "_blank")}>Github</a>
+      </div>
+
+      <div class="hyper-link-wrap">
+      <a className="hyper-link" onClick={() => window.open("https://paymerang.herokuapp.com/", "_blank")}>Demo Link</a>
+      </div>
+
+    </div>
+  </div>
   </>
   )
   PopupboxManager.open({ content });
@@ -140,16 +184,22 @@ const openPopupboxbudgetTracker = () => {
     const content = (
         <>
     <img className="portfolio-image-popupbox" src={budgetTracker} alt="Budget Tracker Project.."/>
-    <p>Budget Tracker is a progressive web application where users can track their withdrawals and 
+    <div className="content">
+      <p>Budget Tracker is a progressive web application where users can track their withdrawals and 
         deposits with and without data or an internet connection. <br></br> Users can have faith that their 
         budgets will maintain accuracy during travel, no matter where they go. Budget Tracker additionally
          has the functionality <br></br> to graph a user's total amount of money over time, giving the user a
           physical representation of their budget.</p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Budget-Tracker-Offline-Online", "_blank")}
-    >https://github.com/sethvance26/Budget-Tracker-Offline-Online</a>
-    <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://mighty-gorge-65427.herokuapp.com/", "_blank")}
-    >https://mighty-gorge-65427.herokuapp.com/</a>
+      <div className="linked-section">
+        <div className="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Budget-Tracker-Offline-Online", "_blank")}>Github</a>
+        </div>
+
+        <div className="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://mighty-gorge-65427.herokuapp.com/", "_blank")}>Demo Link</a>
+        </div>
+      </div>
+    </div>
     </>
     )
     PopupboxManager.open({ content });
@@ -177,16 +227,24 @@ const openPopupboxfitnessTracker = () => {
     const content = (
         <>
     <img className="portfolio-image-popupbox" src={fitnessTracker} alt="Workout Tracker Project.."/>
-    <p>Workout Tracker is a application where users can track their workouts, and create new workouts as well.
+    <div className="content">
+      <p>Workout Tracker is a application where users can track their workouts, and create new workouts as well.
          Users can log multiple exercises <br></br> in a workout they've done for that day with functionality for 
          different types of exercises, different amounts of reps/sets, weight amounts,<br></br> duration of the 
          exercise, or distance traveled for cardio. Users can also view their dashboard, which shows their 
          workout information graphed over time.</p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Workout-Tracker", "_blank")}
-    >https://github.com/sethvance26/Workout-Tracker</a>
-    <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca", "_blank")}
-    >https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca</a>
+      <div className="linked-section">
+
+        <div className="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Workout-Tracker", "_blank")}>Github</a>
+        </div>
+
+        <div className="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://protected-bayou-89644.herokuapp.com/?id=60dbe7a87541f90015d101ca", "_blank")}>Demo Link</a>
+        </div>
+
+      </div>
+    </div>
     </>
     )
     PopupboxManager.open({ content });
@@ -214,14 +272,19 @@ const openPopupboxworkday = () => {
     const content = (
         <>
     <img className="portfolio-image-popupbox" src={workday} alt="Workday scheduler Project.."/>
-    <p>WorkDay scheduler uses Moment.js to give user the current time and date, and alters the color of each line depending 
+    <div className="content">
+      <p>WorkDay scheduler uses Moment.js to give user the current time and date, and alters the color of each line depending 
         on the current hour within a typical 9 to 5 workday. The User can also write in notes for each hour which will be stored in the
         user's Local Storage and remain on the page. Jquery and conditional statements were also applied in this project. </p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Day-Planner", "_blank")}
-    >https://github.com/sethvance26/Day-Planner</a>
-    <br></br>
-    <b>Demo Link:</b> <a className="hyper-link" onClick={() => window.open("https://sethvance26.github.io/Day-Planner/", "_blank")}
-    >https://sethvance26.github.io/Day-Planner/</a>
+      <div className="linked-section">
+        <div class="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Day-Planner", "_blank")}>Github</a>
+        </div>
+        <div class="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://sethvance26.github.io/Day-Planner/", "_blank")}>Demo Link</a>
+        </div>
+      </div>
+    </div>
     </>
     )
     PopupboxManager.open({ content });
@@ -249,17 +312,23 @@ const openPopupboxEmployee = () => {
     const content = (
         <>
     <img className="portfolio-image-popupbox" src={employee} alt="Employee Tracker Project.."/>
-    <p>Employee Tracker uses MySql to architect and build a solution for managing a potential
+    <div className="content">
+      <p>Employee Tracker uses MySql to architect and build a solution for managing a potential
          company's employees using node, inquirer, and mySQL. In simple terms, this application 
          builds a Content Management System, so that non-developers can view and interact with 
          employee information within the database. This way you can add Employees, Departments, 
          and Roles, view the existing ones in the database, and update roles for existing employees'
-        as well.  </p>
-    <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Employee-Tracker", "_blank")}
-    >https://github.com/sethvance26/Employee-Tracker</a>
-    <br></br>
-    <b>Video Demonstration:</b> <a className="hyper-link" onClick={() => window.open("https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view", "_blank")}
-    >https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view</a>
+        as well.</p>
+
+      <div className=""></div>
+
+      <div className="linked-section">
+        <div class="hyper-link-wrap">
+          <a className="hyper-link" onClick={() => window.open("https://github.com/sethvance26/Employee-Tracker", "_blank")}>Github</a>
+          <a className="hyper-link" onClick={() => window.open("https://drive.google.com/file/d/10lopFrnOohjneWHMSBO-3dtR5eKPAqi1/view", "_blank")}>Video Demonstration</a>
+        </div>
+      </div>
+    </div>
     </>
     )
     PopupboxManager.open({ content });
